@@ -1,0 +1,879 @@
+body {
+      font-family: sans-serif, Arial;
+      margin: 0;
+}
+
+/* Navbar stuff */
+
+.toggler {
+	display: none; /* Hide toggler for mobile hamburger while not on mobile device */
+}
+
+.navbar {
+	background-color: #383e4c;
+	border-color: #383E4C;
+	text-align: center;
+	border-width: 0 0 1px;
+	margin: 0;
+	position: fixed; /* Set the navbar to fixed position */
+    width: 100%; /* Full width */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li:hover {
+    background: #49505F;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    border: 1px solid #646e7c;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+ul {
+	display: inline-block;
+	list-style-type: none;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+	margin: 0 -5px; 
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+.list-margin {
+	margin-bottom: 50px;
+}
+
+.listed .card {
+	display: inline-block;
+	/* Add shadows to create the "card" effect */
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.listed .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.listed .container {
+  padding: 2px 16px;
+}
+
+/* Float three columns side by side */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0 10px;
+}
+
+/* Float two columns side by side */
+.column-two {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  display:  block
+}
+
+/* Float four columns side by side */
+.column-three {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  display:  block
+}
+
+/* Float one columns*/
+.column-four {
+  float: left;
+  width: 100%;
+  padding: 0 10px;
+  display:  block
+}
+
+
+/* Headers */
+.header-content {
+    text-align: center;
+    padding: 200px;
+}
+
+.header-content h1 {
+    color: #fff;
+    font-size: 70px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000;  
+    margin: 0;
+}
+
+.header-content h4 {
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 2px 2px #000;  
+    margin: 0;
+}
+
+.header-content-two {
+    text-align: center;
+    padding: 80px;
+}
+
+.header-content-general h1 {
+    color: #fff;
+    text-transform: capitalize;
+    text-shadow: 2px 2px #aaa;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.header-content-two p {
+    color: #fff;
+    font-size: 18px;  
+    margin: 0;
+}
+
+.header-content-three {
+    padding: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.header-content-three p {
+    color: white;
+    font-size: 18px;
+    background-color: rgba(100,110,124, 0.5);
+    padding: 20px; 
+    border-radius: 5px;
+}
+
+
+
+/* Sections */
+
+.section-general {
+    background-color: #fbec85;
+    text-align: center;
+    margin: 0;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+}
+
+.section-one {
+    background-image: url('../images/photo-1461088778056-88bf6d3cefcd.jpg'); 
+    height: 614.5px;
+}
+
+.section-two-four {
+    min-height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+
+.section-three {
+    background-image: url('../images/photo-1460400355256-e87506dcec4f.jpg') ; 
+}
+
+.section-five {
+    background-image: url("../images/photo-skyscrapper.jpg") ;
+}
+
+
+/* Card related Css */
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card-padding {
+	padding: 20px 20px 40px 20px;
+}
+
+.card-general h4 {
+	text-align: left;
+	font-size: 20px;
+    font-weight: 700;
+}
+
+.card-general p {
+	text-align: left;
+	padding-bottom: 20px;
+	font-size: 14px;
+    line-height: 1.6em;
+	color: #383E4C;
+}
+
+.card-general a {
+	text-align: center;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.card-four-five a {
+	background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #666;
+    font-size: 18px;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.card-one h4 {
+	color: green;
+}
+
+.card-one a {
+	color: white;
+	background-color: green;
+}
+
+.card-two h4 {
+	color: #1b86c1;
+}
+
+.card-two a {
+	color: white;
+	background-color: #1b86c1;
+}
+
+.card-three h4 {
+	color: dimgray;
+}
+.card-three a {
+	color: white;
+	background-color: saddlebrown;
+}
+
+.card-four h4 {
+	text-align: center;
+	color: dimgray;
+}
+
+.card-five h4 {
+	text-align: center;
+	color: dimgray;
+}
+
+.card-six h4 {
+	color: dimgray;
+}
+
+
+
+
+
+
+.form-fields {
+	font-size: 18px;
+    background-color: rgba(100,110,124, 0.5);
+    padding: 7px; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 0px; 
+}
+
+textarea {
+    font-family: sans-serif;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+}
+
+.column-form {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  display:  block
+}
+
+#submit {
+	background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 7px; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+#section-six {
+	text-align: center;
+}
+
+.footer-text {
+	padding: 0px 0px 30px 0px;
+}
+.footer-text h1 {
+    color: #666;
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+
+.footer-text p {
+    color: #999;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.copyright {
+	color: #666;
+    font-size: 12px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding-top: 30px ;
+    padding-bottom: 100px;
+}
+
+#myBtn {
+  //display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  //right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 40px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  background-image: url('https://www.free-css.com/assets/files/free-css-templates/preview/page196/conquer/assets/img/top.png');
+  right: 20px;
+  width: 38px;
+  height: 38px;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 480px) {
+
+	.toggler{
+	  /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
+	    z-index:2;
+	    height: 50px;
+	    width: 50px;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    cursor: pointer;
+	    opacity: 0;
+	    display: block;
+	}
+
+	.hamburger{
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 40px;
+	    width: 40px;
+	    padding: 0.6rem;
+	  
+	  /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
+	  
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+
+	/* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
+
+	.hamburger > div{
+	    position: relative;
+	    top: 0;
+	    left: 0;
+	    background: white;
+	    height: 2px;
+	    width: 60%;
+	    transition: all  0.4s ease;
+	}
+
+	/* CREATING THE TOP AND BOTTOM LINES : 
+	TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
+
+	.hamburger > div::before,
+	.hamburger > div::after{
+	    content: '';
+	    position: absolute;
+	    top: -10px;
+	    background: white;
+	    width: 100%;
+	    height: 2px;
+	    transition: all  0.4s ease;
+	}
+
+	.hamburger > div::after{
+	    top: 10px;
+	}
+
+	/* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
+
+	.toggler:checked + .hamburger > div{
+	    background: rgba(0,0,0,0);
+	}
+
+	.toggler:checked + .hamburger > div::before{
+	    top: 0;
+	    transform: rotate(45deg);
+	    background: black;
+	}
+
+	/* AND ROTATING THE TOP AND BOTTOM LINES :  */
+
+	.toggler:checked + .hamburger > div::after{
+	    top: 0;
+	    transform: rotate(135deg);
+	    background: white;
+	}
+
+
+	/* MAIN MENU WITH THE WHITE BACKGROUND AND THE TEXT :  */
+
+	.navbar{
+	  
+	  /* APPLYING TRANSITION TO THE MENU :  */
+	  
+	    transition: all 0.4s ease;
+	}
+
+	/* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
+
+	.toggler:checked ~ .navbar{
+	    width: 30%;
+	}
+
+	/* STYLING THE LIST :  */
+
+	.navbar >  nav > ul{
+	    display: flex;
+	    flex-direction: column;
+	    position: fixed;
+	    top: 40px;
+	    background-color: #383e4c;
+
+	  /* HIDDEN INITIALLY  :  */
+	  
+	    visibility: hidden;
+	}
+
+	.navbar > nav > ul > li{
+	    list-style: none;
+	    padding: 0.5rem;
+	}
+
+
+
+	/* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
+
+	.toggler:checked ~ .navbar > nav > ul{
+	    transition: visibility 0.4s ease;
+	    transition-delay: 0.1s;
+	    visibility: visible;
+	}
+
+	.toggler:checked ~ .navbar > nav > ul > li > a:hover{
+	    color: orange;
+	}
+
+	.navbar {
+		background-color: #383e4c;
+		border-color: #383E4C;
+		text-align: center;
+		border-width: 0 0 1px;
+		margin: 0;
+		position: fixed; /* Set the navbar to fixed position */
+	    width: 100%; /* Full width */
+	}
+
+	ul {
+		list-style-type: none;
+	    padding-left: 0px;
+	    padding-right: 0px;
+	}
+
+	nav ul li {
+		display: block;
+		list-style-type: none;
+	    margin: 0;
+	    padding: 15px;
+	    border: 1px solid #646e7c;
+	    color: white;
+	    font-size: 15px;
+	    text-transform: capitalize;
+	}
+
+	.column {
+	    width: 100% ;
+	    display: block;
+	    margin-bottom: 20px;
+	}
+
+	.column-two {
+	    width: 100% ;
+	    display: block;
+	    margin-bottom: 20px;
+	}
+
+	.column-three {
+	    width: 100% ;
+	    display: block;
+	    margin-bottom: 20px;
+	}
+
+	.column-four {
+	    width: 100% ;
+	    display: block;
+	    margin-bottom: 20px;
+	}
+
+	.section-general {
+	    background-color: white;
+	    text-align: center;
+	    margin: 0;
+	    min-height: 100%;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    background-size: cover;
+	    background-attachment: fixed;
+	    margin-bottom: 50px;
+	}
+
+	.section-one {
+	    background-image: url('../images/photo-1461088778056-88bf6d3cefcd.jpg'); 
+	    height: 414.5px;
+	}
+
+	.header-content {
+	    text-align: center;
+	    padding: 100px 50px;
+	}
+
+	.header-content h1 {
+	    color: #fff;
+	    font-size: 30px;
+	    text-transform: uppercase;
+	    text-shadow: 2px 2px #000;  
+	    margin: 0;
+	}
+
+	.header-content h4 {
+	    font-size: 15px;
+	}
+
+	.column-form {
+	  //float: left;
+	  width: 100%;
+	  padding: 0 10px;
+	  display:  block
+	}
+
+	#submit {
+		background-color: black;
+	    color: white;
+	    font-size: 18px;
+	    padding: 7px; 
+	    border-radius: 5px;
+	    margin-bottom: 10px;
+	    width: 50%;
+	}
+
+	.header-content-general h1 {
+	    color: #fff;
+	    text-transform: capitalize;
+	    text-shadow: 2px 2px #aaa;
+	    margin-bottom: 20px;
+	    font-size: 36px;
+	}
+
+	.header-content-three {
+	    padding: 0px;
+	    margin-left: 10px;
+	    margin-right: 10px;
+	}
+
+	.header-content-three p {
+	    color: white;
+	    font-size: 18px;
+	    background-color: rgba(100,110,124, 0.5);
+	    padding: 20px; 
+	    border-radius: 5px;
+	}
+
+	#section-six {
+		text-align: center;
+	}
+
+	.footer-text h1 {
+	    color: #666;
+	    font-size: 32px;
+	    font-style: italic;
+	    margin-bottom: 25px;
+	    margin-top: 35px;
+	}
+
+	.footer-text p {
+	    color: #999;
+	    font-style: italic;
+	    margin-bottom: 30px;
+	}
+
+	.copyright {
+		color: #666;
+	    font-size: 12px;
+	    margin-bottom: 30px;
+	    margin-top: 10px;
+	    padding-top: 30px ;
+	    padding-bottom: 100px;
+	}
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 960px) {
+
+	.column-three {
+	    width: 50% ;
+	    display: block;
+	    margin-bottom: 20px;
+	}
+
+	.column-four {
+	    width: 100% ;
+	    display: block;
+	    margin-bottom: 20px;
+	}
+
+	.section-general {
+	    background-color: white;
+	    text-align: center;
+	    margin: 0;
+	    min-height: 100%;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    background-size: cover;
+	    background-attachment: fixed;
+	    margin-bottom: 50px;
+	}
+
+	.section-one {
+	    background-image: url('../images/photo-1461088778056-88bf6d3cefcd.jpg'); 
+	    height: 414.5px;
+	}
+
+	.header-content {
+	    text-align: center;
+	    padding: 200px 50px 0px 50px;
+	}
+
+	.header-content h1 {
+	    color: #fff;
+	    font-size: 30px;
+	    text-transform: uppercase;
+	    text-shadow: 2px 2px #000;  
+	    margin: 0;
+	}
+
+	.header-content h4 {
+	    font-size: 15px;
+	}
+
+	.column-form {
+	  width: 100%;
+	  padding: 0 10px;
+	  display:  block
+	}
+
+	#submit {
+		background-color: black;
+	    color: white;
+	    font-size: 18px;
+	    padding: 7px; 
+	    border-radius: 5px;
+	    margin-bottom: 10px;
+	    width: 50%;
+	}
+
+	.header-content-general h1 {
+	    color: #fff;
+	    text-transform: capitalize;
+	    text-shadow: 2px 2px #aaa;
+	    margin-bottom: 20px;
+	    font-size: 36px;
+	}
+
+	.header-content-three {
+	    padding: 30px 10px;
+	    margin-left: 10px;
+	    margin-right: 10px;
+	}
+
+	.header-content-three p {
+	    color: white;
+	    font-size: 18px;
+	    background-color: rgba(100,110,124, 0.5);
+	    padding: 20px; 
+	    border-radius: 5px;
+	}
+	
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 300px) {
+
+    .column {
+	    width: 100% ;
+	    display: block;
+	    margin-bottom: 20px;
+	}
+	
+	.column-three {
+	    width: 100% ;
+	    display: block;
+	    margin-bottom: 20px;
+	}
+
+	.column-four {
+	    width: 100% ;
+	    display: block;
+	    margin-bottom: 20px;
+	}
+
+
+	.section-general {
+	    background-color: white;
+	    text-align: center;
+	    margin: 0;
+	    min-height: 100%;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    background-size: cover;
+	    background-attachment: fixed;
+	    margin-bottom: 50px;
+	}
+
+	.section-one {
+	    background-image: url('../images/photo-1461088778056-88bf6d3cefcd.jpg'); 
+	    height: 414.5px;
+	}
+
+	.header-content {
+	    text-align: center;
+	    padding: 200px 50px 0px 50px;
+	}
+
+	.header-content h1 {
+	    color: #fff;
+	    font-size: 30px;
+	    text-transform: uppercase;
+	    text-shadow: 2px 2px #000;  
+	    margin: 0;
+	}
+
+	.header-content h4 {
+	    font-size: 15px;
+	}
+
+	.column-form {
+	  width: 100%;
+	  padding: 0 10px;
+	  display:  block
+	}
+
+	#submit {
+		background-color: black;
+	    color: white;
+	    font-size: 18px;
+	    padding: 7px; 
+	    border-radius: 5px;
+	    margin-bottom: 10px;
+	    width: 50%;
+	}
+
+	.header-content-general h1 {
+	    color: #fff;
+	    text-transform: capitalize;
+	    text-shadow: 2px 2px #aaa;
+	    margin-bottom: 20px;
+	    font-size: 36px;
+	}
+
+
+	.header-content-three {
+	    padding: 30px 10px;
+	    margin-left: 10px;
+	    margin-right: 10px;
+	}
+
+	.header-content-three p {
+	    color: white;
+	    font-size: 18px;
+	    background-color: rgba(100,110,124, 0.5);
+	    padding: 20px; 
+	    border-radius: 5px;
+	}
+
+	.card-general a {
+		text-align: center;
+		border-radius: 5px;
+		text-decoration: none;
+		font-size: 10px;
+	}
+}
+
+
