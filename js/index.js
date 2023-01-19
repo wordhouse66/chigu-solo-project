@@ -4,7 +4,6 @@ window.onload = function() {
 const easeInCubic = function (t) { return t*t*t } 
 const scrollElems = document.getElementsByClassName('scroll');
 
-
 //console.log(scrollElems);
 const scrollToElem = (start, stamp, duration, scrollEndElemTop, startScrollOffset) => {
     //debugger;

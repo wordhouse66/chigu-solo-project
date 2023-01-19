@@ -518,8 +518,6 @@ textarea {
 	    padding: 0.5rem;
 	}
 
-
-
 	/* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
 
 	.toggler:checked ~ .navbar > nav > ul{
@@ -618,7 +616,6 @@ textarea {
 	}
 
 	.column-form {
-	  //float: left;
 	  width: 100%;
 	  padding: 0 10px;
 	  display:  block
